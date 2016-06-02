@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- テーマカラーを設定するmetaタグ -->
+    <!-- 初期値はロード完了後JavaScriptで設定される -->
+    <meta name="theme-color">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <!-- bootstrap-colorpicker -->
+    <link rel="stylesheet" href="libs/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- CSS about this page -->
+    <link rel="stylesheet" href="css/index.css">
+    <title>テーマカラー変更サンプル</title>
+</head>
+<body>
+    <div class="container">
+        <h3>テーマカラーサンプル</h3>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p>Android版のChromeでテーマカラーを設定するサンプルです。以下のカラーピッカーから色を選択してください。</p>
+                <div id="color-picker" class="input-group colorpicker-component">
+                    <input type="text" class="form-control" />
+                    <span class="input-group-addon"><i></i></span>
+                </div>
+            </div>
+        </div>
+        <p>選択した色がアドレスバーと（Android 5.0以上なら）ステータスバーに反映されます。</p>
+        <p class="text-center">↓↓↓色が反映↓↓↓</p>
+        <div class="panel panel-default">
+            <div class="panel-body" id="color-panel">
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- bootstrap-colorpicker -->
+    <script src="libs/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"/></script>
+    <!-- Scripts about this page -->
+    <script src="js/index.js"></script>
+
+</body>
+</html>
